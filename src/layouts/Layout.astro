@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cosmos App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>🌌 Welcome to Cosmos App</h1>
+      <p>Explore the universe with real-time data</p>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="/apod">Image of the Day</a></li>
+        <li><a href="/launches">Launches</a></li>
+        <li><a href="/planets">Planets</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <slot />
+    </main>
+  </body>
+</html>
